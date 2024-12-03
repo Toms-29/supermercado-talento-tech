@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <link rel="stylesheet" href="../Styles/contacto.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="Header">
+        <section class="headerSection">
+            <picture>
+                <img class="imgLogo" src="../assets/image/logo.png" alt="Logo">
+            </picture>
+
+            <nav class="NavBar">
+                <ul class="listaLinks">
+                    <li> <a class="links" href="../index.html"> Inicio </a></li>
+                    <li class="links activo"> Contacto </li>
+                </ul>
+            </nav>
+
+            <img class="imgUsuario" src="../assets/image/usuario.png" alt="Usuario">
+
+
+            <img class="menuHamburguesa" src="../assets/image/menu.png" alt="Menu hamburguesa">
+        </section>
+    </header>
+
+    <!-- Form -->
+    <section class="sectionForm">
+        <form method="post" action="https://formspree.io/f/xgveopgd">
+            <label for="nombre">
+                Nombre:
+                <br>
+                <input class="inputForm" type="text" name="nombre" placeholder="Ingrese aqui su nombre" required>
+            </label>
+            
+            <label for="email">
+                Email:
+                <br>
+                <input class="inputForm" type="email" name="email" placeholder="Ingrese aqui su email" required>
+            </label>
+            
+            <label for="mensaje">
+                Mensaje:
+                <br>
+                <textarea class="textaAreaForm inputForm" name="mensaje" id="mensaje" placeholder="Escribi aca tu mensaje" required></textarea>
+            </label>
+
+            <button class="botonEnviar" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="Footer">
+        <section class="footerSection">
+            <article class="footerArticleText">
+                <h2>Sobre nosotros:</h2>
+                <p>
+                    Trabajando hace mas de 20 años,
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt libero necessitatibus accusamus
+                    in. Assumenda, quaerat facilis fugit eius sequi nihil quam maxime aliquid laudantium distinctio
+                    placeat cupiditate consequuntur quos hic?
+                </p>
+                <br>
+                <p>
+                    Icono de <a target="_blank" href="https://icons8.com">Icons8</a>
+                </p>
+            </article>
+
+            <article class="footerArticleIframe">
+                <h2>Ubicacion:</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13108.380818587526!2d-58.351763812841796!3d-34.7783785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d1e26b38247%3A0xc22d690de153c891!2sSupermercados%20DIA!5e0!3m2!1ses!2sar!4v1730142593753!5m2!1ses!2sar"
+                    width="260" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </article>
+        </section>
+    </footer>
+
+
+    <script src=""></script>
+</body>
+
+</html>
