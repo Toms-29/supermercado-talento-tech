@@ -9,4 +9,6 @@ const apiCall = async () => {
     }
 }
 
-apiCall()
+(() => {
+    
+},[])
