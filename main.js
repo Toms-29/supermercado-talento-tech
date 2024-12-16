@@ -9,7 +9,7 @@ const mainProducts = async () => {
 
         productBox.innerHTML =
             `<div id='product-card-${product.id}' class="card" style="width: 18rem;">
-                <img src="${product.images[0]}" class="card-img-top" alt="${product.title}">
+                <img src="${product.images[0]}" style="width: 300px; height:300px;" class="card-img-top" alt="${product.title}">
                 <div class="card-body">
                     <h5 class="card-title">${product.title} title</h5>
                     <p class="card-text">${product.description}</p>

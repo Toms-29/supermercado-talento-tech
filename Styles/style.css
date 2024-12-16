@@ -93,6 +93,22 @@ body {
     margin-bottom: 10px;
 }
 
+.bannerContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.tituloPrincipal {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+}
+
 
 /* Footer */
 .Footer {
