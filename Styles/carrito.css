@@ -1,0 +1,94 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template: 
+    'Header'
+    'Main'
+    'Footer';
+}
+
+.Header {
+    grid-template-areas: 'Header';
+}
+
+.Main {
+    grid-template-areas: 'Main';
+    
+}
+
+.Footer {
+    grid-template-areas: 'Footer';
+}
+
+.mensajeCarrito {
+    padding-bottom: auto;
+}
+
+.zonaDeProductos {
+    display: flex;
+}
+
+.cardCarrito {
+    margin: 25px;
+    padding: 20px;
+    max-width: 800px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 3px 3px 10px silver;
+}
+
+.calculoPago {
+    max-height: max-content;
+    max-width: 500px;
+    padding: 30px 40px;
+    margin: 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px silver;
+}
+
+.calculoPago > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.itemProductList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 3px;
+    border-bottom: 1px solid silver;
+}
+
+.calculoPago > h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .cardCarrito {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .zonaDeProductos {
+        flex-direction: column;
+    }
+
+}
