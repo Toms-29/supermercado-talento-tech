@@ -1,7 +1,6 @@
 const agregarAlCarrito = (cardId, cardTitle, cardPrice) => {
     const KEY_PRODUCTOS_CARRITO = 'productosCarrito'
 
-    const card = document.getElementById(cardId)
     const title = document.getElementById(cardTitle)
     const price = document.getElementById(cardPrice)
 
@@ -13,6 +12,9 @@ const agregarAlCarrito = (cardId, cardTitle, cardPrice) => {
     const lista = JSON.parse(sessionStorage.getItem(KEY_PRODUCTOS_CARRITO)) || [];
     lista.push(datoParaCarrito);
     sessionStorage.setItem(KEY_PRODUCTOS_CARRITO, JSON.stringify(lista));
+
+    alert('Producto agregado al carrito!')
+
 
 };
 

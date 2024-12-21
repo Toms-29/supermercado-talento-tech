@@ -1,5 +1,6 @@
 const productosEnStorage = JSON.parse(sessionStorage.getItem('productosCarrito')) || []
 
+
 const productosTitle = productosEnStorage.map(dato => (dato.producto))
 
 
@@ -24,7 +25,6 @@ const crearListaCarrito = async (producto, cantidad) => {
                     <p class="card-text">${data.products[0].description}</p>
                     <p class="card-text"><small class="text-muted">${data.products[0].price}</small></p>
                     <input id='cantidadProducto' type='number' min='1' required value=${cantidad} />
-                    <button class='btn btn-danger' onclick='' >Eliminar</button>
                 </div>`
 
         carrito.appendChild(hola)
